@@ -4,7 +4,7 @@ Basic integration of truffle into meteor.
 ## Installation
 
 ```
-git cone https://github.com/blockchain-hacklab/meteor-truffle.git
+git clone https://github.com/blockchain-hacklab/meteor-truffle.git
 cd meteor-truffle
 meteor npm install
 ```
