@@ -6,10 +6,8 @@
   },
   "dependencies": {
     "bignumber.js": "^2.3.0",
-    "ether-pudding": "^1.1.4",
-    "fs": "0.0.2",
+    "ether-pudding": "^2.0.6",
     "meteor-node-stubs": "^0.2.3",
-    "utils-fs-read-file": "^1.0.0",
     "web3": "^0.17.0-alpha"
   }
 }
