@@ -1,3 +1,5 @@
+import BigNumber from 'bignumber.js';
+
 contract('MetaCoin', function(accounts) {
   it("should put 10000 MetaCoin in the first account", function(done) {
     var meta = MetaCoin.deployed();
@@ -16,10 +18,10 @@ contract('MetaCoin', function(accounts) {
       return meta.getBalanceInEth.call(accounts[0]);
     }).then(function(outCoinBalanceEth){
       metaCoinEthBalance = outCoinBalanceEth.toNumber();
-      
+
     }).then(function(){
       assert.equal(metaCoinEthBalance,2*metaCoinBalance,"Library function returned unexpeced function, linkage may be broken");
-      
+
     }).then(done).catch(done);
   });
   it("should send coin correctly", function(done) {
