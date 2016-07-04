@@ -1,6 +1,6 @@
 import Pudding from './pudding.js';
 // Import Truffle file
-import MetaCoin from '../../truffle/environments/development/contracts/MetaCoin.sol.js';
+import MetaCoin from '../smart-contracts/environments/development/contracts/MetaCoin.sol.js';
 
 // Load Truffle file
 MetaCoin.load(Pudding);
