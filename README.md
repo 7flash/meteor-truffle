@@ -1,5 +1,6 @@
 # meteor-truffle
-Basic integration of truffle into meteor.
+
+Makes it about as easy as it gets to integrate smart-contracts into your Meteor project.
 
 ## Installation
 
@@ -21,7 +22,12 @@ Basic integration of truffle into meteor.
     meteor npm install
     ```
 
-## Starting application
+## Developing with Truffle
+Simply go to directory `./imports/lib/smart-contracts` and develop your smart-contracts just like in any other Truffle project.
+
+Or even simpler; Import/Export this folder via a git submodule.
+
+## Starting Meteor application
 In above directory run:
 
 ```
@@ -33,8 +39,3 @@ and start an ethereum node (or TestRPC) w options similar to this
 ```
 geth --rpc --rpccorsdomain="http://localhost:3000" --unlock=0 --testnet console
 ```
-
-## Developing Contracts
-Simply go to directory `./imports/lib/smart-contracts` and develop your contracts just like in any other Truffle project.
-
-Or even simpler; Import/Export this folder via a git submodule.
