@@ -21,9 +21,6 @@ Basic integration of truffle into meteor.
     meteor npm install
     ```
 
-**Ubuntu User?** Follow the basic instructions for installing [Node.js](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions) and make sure that you have `npm` installed, as well as the `build-essential` `apt` package (it supplies `make` which you will need to compile most things). Use the official Node.js packages, *do not use the package supplied by your distribution.*
-
-
 ## Starting application
 In above directory run:
 
@@ -38,6 +35,6 @@ geth --rpc --rpccorsdomain="http://localhost:3000" --unlock=0 --testnet console
 ```
 
 ## Developing Contracts
-Go to directory `./imports/lib/smart-contracts`: and develop just like any other Truffle project.
+Simply go to directory `./imports/lib/smart-contracts` and develop your contracts just like in any other Truffle project.
 
 Or even simpler; Import/Export this folder via a git submodule.
