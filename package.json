@@ -6,7 +6,7 @@
   },
   "dependencies": {
     "bignumber.js": "^2.3.0",
-    "ether-pudding": "^2.0.6",
+    "ether-pudding": "^3.1.2",
     "meteor-node-stubs": "^0.2.3",
     "web3": "^0.17.0-alpha"
   }
