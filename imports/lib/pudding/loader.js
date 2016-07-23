@@ -4,12 +4,11 @@ import MetaCoin from '../smart-contracts/build/contracts/MetaCoin.sol.js';
 import ConvertLib from '../smart-contracts/build/contracts/ConvertLib.sol.js';
 
 // Load Truffle file
-MetaCoin.setProvider(web3);
 ConvertLib.setProvider(web3);
 
 // This works!
-var meta = MetaCoin.deployed();
-console.log(meta);
+var convertLib = ConvertLib.deployed();
+console.log(convertLib);
 
 // This doesn't work not!
 const fromAddr =web3.eth.coinbase;
