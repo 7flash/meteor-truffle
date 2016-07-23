@@ -1,7 +1,7 @@
 import Web3 from 'web3';
-
 import web3 from '../ethereum/web3.js';
-// Import Truffle file
+
+// Import Truffle files
 import MetaCoin from '../smart-contracts/build/contracts/MetaCoin.sol.js';
 import ConvertLib from '../smart-contracts/build/contracts/ConvertLib.sol.js';
 
@@ -9,11 +9,11 @@ import ConvertLib from '../smart-contracts/build/contracts/ConvertLib.sol.js';
 const provider = new Web3.providers.HttpProvider('http://localhost:8545')
 ConvertLib.setProvider(provider)
 
-// This works!
+// Display through Truffle deployed ConvertLib
 var convertLib = ConvertLib.deployed();
 console.log(convertLib);
 
-// This does not work!
+// Deploy a new ConvertLib contract
 const fromAddr = web3.eth.coinbase;
 const gasPrice = 100000000000;
 const gas = 2500000;
