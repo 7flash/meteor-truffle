@@ -1,10 +1,13 @@
+import Web3 from 'web3';
+
 import web3 from '../ethereum/web3.js';
 // Import Truffle file
 import MetaCoin from '../smart-contracts/build/contracts/MetaCoin.sol.js';
 import ConvertLib from '../smart-contracts/build/contracts/ConvertLib.sol.js';
 
 // Load Truffle file
-ConvertLib.setProvider(web3);
+const provider = new Web3.providers.HttpProvider('http://localhost:8545')
+ConvertLib.setProvider(provider)
 
 // This works!
 var convertLib = ConvertLib.deployed();
