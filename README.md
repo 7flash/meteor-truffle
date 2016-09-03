@@ -22,10 +22,13 @@ Makes it about as easy as it gets to integrate smart-contracts into your Meteor 
     meteor npm install
     ```
 
-## Developing with Truffle
+## Develop with Truffle
 Simply go to directory `./imports/lib/smart-contracts` and develop your smart-contracts just like in any other Truffle project.
 
 Or even simpler; Import/Export this folder via a git submodule.
+
+## Integrate Smart Contracts
+Simply import the smart-contract into your Meteor project, e.g. `import MetaCoin from '../smart-contracts/build/contracts/MetaCoin.sol.js';` and use like in any other <a href="https://github.com/ConsenSys/ether-pudding">Ether-pudding</a> project.
 
 ## Starting Meteor application
 In above directory run:
